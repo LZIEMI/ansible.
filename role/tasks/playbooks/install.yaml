@@ -1,0 +1,9 @@
+  - name: Install httpd
+    yum:
+      name: "{{ package_name }}"
+      state: installed
+  - name: start service
+    service:
+       name: httpd
+       state: started    
+  
