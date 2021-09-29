@@ -1,6 +1,6 @@
 - name: copy httpd.conf  file
   become: yes
-  copy:
-    src:  httpd.conf
+  template:
+    src:  httpd.j2
     dest: /etc/httpd/conf/httpd.conf
   notify: restart service
