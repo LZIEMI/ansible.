@@ -1,5 +1,2 @@
----
-- hosts: dev
-  tasks:
-  - include: install.yaml
-  - include: copyfile.yaml
+- include: install.yaml
+- include: copyfile.yaml
