@@ -1,8 +1,10 @@
   - name: Install httpd
+    become: yes
     yum:
       name: "{{ package_name }}"
       state: installed
   - name: start service
+    become: yes
     service:
        name: httpd
        state: started    
