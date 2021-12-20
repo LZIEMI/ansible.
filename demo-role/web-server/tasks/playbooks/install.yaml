@@ -1,7 +1,7 @@
   - name: Install httpd
     become: yes
     yum:
-      name: httpd
-      state: installed
+      name: {{ package_name }}
+      state: {{ package_state }}
    
   
