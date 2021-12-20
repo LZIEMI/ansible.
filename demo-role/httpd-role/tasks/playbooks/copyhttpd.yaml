@@ -1,0 +1,6 @@
+
+- name: Copy httpd.conf file to the targets
+  become: yes
+  copy:
+    src: httpd.conf
+    dest: /etc/httpd/conf
