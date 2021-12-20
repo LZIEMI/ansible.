@@ -1,9 +1,4 @@
 ---
-- hosts: dev
+- hosts: localhost
   roles:
-   - role: httpd-role
-
-
-  
-    
-    
+    - role: web-server
