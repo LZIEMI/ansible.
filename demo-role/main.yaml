@@ -1,7 +1,7 @@
 ---
 - hosts: dev
   roles:
-   - httpd-role
+   - role: httpd-role
 
 
   
